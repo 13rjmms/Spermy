@@ -2,6 +2,8 @@ package org.academiadecodigo.spermmatchbank.service;
 
 import org.academiadecodigo.spermmatchbank.model.Consumer;
 import org.academiadecodigo.spermmatchbank.model.Donor;
+import org.academiadecodigo.spermmatchbank.model.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,6 +16,7 @@ import java.util.List;
 public class DonorServiceImp implements DonorService{
 
     private List<Donor> listDonors = new ArrayList<>();
+    private ProductServiceImp productService;
     private Donor d1 = new Donor();
     private Donor d2 = new Donor();
 
@@ -64,5 +67,23 @@ public class DonorServiceImp implements DonorService{
 
         listDonors.add(id - 1, donor);
 
+    }
+
+    @Override
+    public Product createProduct(Donor donor) {
+
+        Product product = new Product();
+
+        donor.getProductList().add(product);
+        productService.getListProducts().add(product);
+
+
+        return product;
+
+    }
+
+    @Autowired
+    public void setProductService(ProductServiceImp productService) {
+        this.productService = productService;
     }
 }

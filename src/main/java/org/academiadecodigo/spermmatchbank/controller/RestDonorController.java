@@ -13,6 +13,7 @@ import java.util.List;
 /**
  * Created by codecadet on 05/08/2020.
  */
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/donor")
 public class RestDonorController {

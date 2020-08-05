@@ -3,7 +3,9 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
     <display-name>Sperm Match Bank</display-name>
+
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -12,14 +14,17 @@
             <param-value>WEB-INF/spring/spring-config.xml</param-value>
         </init-param>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-    <context-param>
+
+<!--    <context-param>
         <param-name>spring.profiles.active</param-name>
         <param-value>dev</param-value>
-    </context-param>
+    </context-param>-->
+
     <!--
         By delaying the initialization of Log4j2, we can define, programmatically, which configuration
         to use through our own servlet context listener
@@ -34,11 +39,14 @@
      -->
     <filter>
         <filter-name>encodingFilter</filter-name>
+
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+
         <init-param>
             <param-name>encoding</param-name>
             <param-value>UTF-8</param-value>
         </init-param>
+
         <init-param>
             <param-name>forceEncoding</param-name>
             <param-value>true</param-value>

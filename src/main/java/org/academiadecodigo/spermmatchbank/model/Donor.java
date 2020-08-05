@@ -1,5 +1,7 @@
 package org.academiadecodigo.spermmatchbank.model;
 
+import java.util.List;
+
 /**
  * Created by codecadet on 05/08/2020.
  */
@@ -11,7 +13,12 @@ public class Donor extends DonorConsumerAbstract {
     private String nacionality;
     private String weight;
     private String bloodType;
+    private List<Product> productList;
 
+
+    public List<Product> getProductList() {
+        return productList;
+    }
 
     public String getRace() {
         return race;
@@ -62,5 +69,7 @@ public class Donor extends DonorConsumerAbstract {
         this.bloodType = bloodType;
     }
 
-
+    public void setProductList(List<Product> productList) {
+        this.productList = productList;
+    }
 }

@@ -1,6 +1,7 @@
 package org.academiadecodigo.spermmatchbank.service;
 
 import org.academiadecodigo.spermmatchbank.model.Donor;
+import org.academiadecodigo.spermmatchbank.model.Product;
 
 import java.util.List;
 
@@ -18,6 +19,8 @@ public interface DonorService {
     void save(Donor donor);
 
     void update(Donor donor);
+
+    Product createProduct(Donor donor);
 
 
 

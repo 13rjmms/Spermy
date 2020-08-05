@@ -3,5 +3,7 @@
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/model/DonorConsumerAbstract.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/controller/RestConsumerController.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/main.java
+/Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/service/ConsumerService.java
+/Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/service/ConsumerServiceImp.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/model/ProductAbstract.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/model/Consumer.java

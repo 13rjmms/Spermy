@@ -7,6 +7,7 @@
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/model/Consumer.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/controller/RestConsumerController.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/service/DonorService.java
+/Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/controller/RestProductController.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/service/ProductServiceImp.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/service/ConsumerService.java
 /Users/codecadet/Desktop/spermbank/src/main/java/org/academiadecodigo/spermmatchbank/service/ProductService.java

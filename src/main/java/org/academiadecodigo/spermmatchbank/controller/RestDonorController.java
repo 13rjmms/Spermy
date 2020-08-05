@@ -47,6 +47,18 @@ public class RestDonorController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @RequestMapping(method = RequestMethod.POST, path = "/{id}/product")
+    public ResponseEntity<?> createProduct(@PathVariable Integer id) {
+
+
+
+
+        Donor donor = donorService.get(id);
+
+        donorService.createProduct(donor);
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 
 
 

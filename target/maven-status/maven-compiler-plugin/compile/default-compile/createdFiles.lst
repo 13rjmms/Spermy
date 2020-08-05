@@ -12,3 +12,4 @@ org/academiadecodigo/spermmatchbank/model/DonorConsumerAbstract.class
 org/academiadecodigo/spermmatchbank/model/ProductAbstract.class
 org/academiadecodigo/spermmatchbank/service/DonorServiceImp.class
 org/academiadecodigo/spermmatchbank/controller/RestDonorController.class
+org/academiadecodigo/spermmatchbank/controller/RestProductController.class

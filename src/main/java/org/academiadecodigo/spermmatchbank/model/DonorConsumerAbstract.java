@@ -14,7 +14,17 @@ public abstract class DonorConsumerAbstract {
     private String email;
     private String phone;
     private String adress;
+    private String country;
+    private String city;
 
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -86,5 +96,13 @@ public abstract class DonorConsumerAbstract {
 
     public void setAdress(String adress) {
         this.adress = adress;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }

@@ -40,7 +40,7 @@ public class ProductServiceImp implements ProductService {
 
         listProducts.remove(id - 1);
 
-        listProducts.add(id -1, product);
+        listProducts.add(id - 1, product);
     }
 
     public List<Product> getListProducts() {

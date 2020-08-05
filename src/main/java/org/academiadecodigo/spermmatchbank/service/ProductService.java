@@ -13,9 +13,7 @@ public interface ProductService {
 
     Product get(Integer id);
 
-
     List<Product> listProducts();
-
 
     void save(Product product);
 

@@ -13,7 +13,7 @@ public abstract class DonorConsumerAbstract {
     private String gender;
     private String email;
     private String phone;
-    private String adress;
+    private String address;
     private String country;
     private String city;
 
@@ -90,12 +90,12 @@ public abstract class DonorConsumerAbstract {
         this.bi = bi;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public void setCity(String city) {

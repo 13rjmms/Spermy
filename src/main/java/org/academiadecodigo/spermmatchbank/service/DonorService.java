@@ -20,7 +20,7 @@ public interface DonorService {
 
     void update(Donor donor);
 
-    Product createProduct(Donor donor);
+    Product createProduct(Donor donor, Product product);
 
 
 

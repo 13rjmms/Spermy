@@ -70,20 +70,13 @@ public class DonorServiceImp implements DonorService{
     }
 
     @Override
-    public Product createProduct(Donor donor) {
-        Product product = new Product();
+    public Product createProduct(Donor donor, Product product) {
 
         donor.getProductList().add(product);
 
-        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%>" + donor.getFirstName());
-
         productService.getListProducts().add(product);
 
-        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%>" + productService.getListProducts().get(0).getId());
-
-
         return product;
-
     }
 
     @Autowired

@@ -2,6 +2,7 @@ package org.academiadecodigo.spermmatchbank.controller;
 
 import org.academiadecodigo.spermmatchbank.model.Consumer;
 import org.academiadecodigo.spermmatchbank.model.Donor;
+import org.academiadecodigo.spermmatchbank.model.Product;
 import org.academiadecodigo.spermmatchbank.service.DonorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -48,14 +49,14 @@ public class RestDonorController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/{id}/product")
-    public ResponseEntity<?> createProduct(@PathVariable Integer id) {
+    public ResponseEntity<?> createProduct(@PathVariable Integer id, @RequestBody Product product) {
 
 
 
 
         Donor donor = donorService.get(id);
 
-        donorService.createProduct(donor);
+        donorService.createProduct(donor, product);
 
         return new ResponseEntity<>(HttpStatus.OK);
     }

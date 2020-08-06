@@ -13,6 +13,7 @@ public class DtoDonor {
     private String lastName;
     private int age;
     private String gender;
+    private String bio;
     private String email;
     private String phone;
     private String address;
@@ -28,6 +29,10 @@ public class DtoDonor {
     private List<Product> productList = new ArrayList<>();
     private int numberSamples;
 
+
+    public String getBio() {
+        return bio;
+    }
 
     public int getNumberSamples() {
         return numberSamples;
@@ -187,5 +192,9 @@ public class DtoDonor {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 }

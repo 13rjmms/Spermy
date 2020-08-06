@@ -16,7 +16,12 @@ public class Donor extends DonorConsumerAbstract {
     private String bloodType;
     private String imgURL;
     private List<Product> productList = new ArrayList<>();
+    private int numberSamples;
 
+
+    public int getNumberSamples() {
+        return numberSamples;
+    }
 
     public String getImgURL() {
         return imgURL;
@@ -81,5 +86,9 @@ public class Donor extends DonorConsumerAbstract {
 
     public void setImgURL(String imgURL) {
         this.imgURL = imgURL;
+    }
+
+    public void setNumberSamples(int numberSamples) {
+        this.numberSamples = numberSamples;
     }
 }

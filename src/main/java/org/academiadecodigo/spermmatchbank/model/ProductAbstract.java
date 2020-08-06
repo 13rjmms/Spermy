@@ -6,11 +6,9 @@ package org.academiadecodigo.spermmatchbank.model;
 public abstract class ProductAbstract {
 
     private int id;
-    private int numberSamples;
 
-    public int getNumberSamples() {
-        return numberSamples;
-    }
+
+
 
 
     public int getId() {
@@ -22,7 +20,5 @@ public abstract class ProductAbstract {
     }
 
 
-    public void setNumberSamples(int numberSamples) {
-        this.numberSamples = numberSamples;
-    }
+
 }

@@ -73,6 +73,7 @@ public class DonorServiceImp implements DonorService{
     public Product createProduct(Donor donor, Product product) {
 
         donor.getProductList().add(product);
+        donor.setNumberSamples(donor.getProductList().size());
 
         productService.getListProducts().add(product);
 

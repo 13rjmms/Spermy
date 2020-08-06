@@ -1,5 +1,9 @@
 package org.academiadecodigo.spermmatchbank.controller;
 
+import org.academiadecodigo.spermmatchbank.converters.Convertor;
+import org.academiadecodigo.spermmatchbank.dtos.DtoConsumer;
+import org.academiadecodigo.spermmatchbank.dtos.DtoDonor;
+import org.academiadecodigo.spermmatchbank.dtos.DtoProduct;
 import org.academiadecodigo.spermmatchbank.model.Consumer;
 import org.academiadecodigo.spermmatchbank.model.Donor;
 import org.academiadecodigo.spermmatchbank.model.Product;
@@ -9,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,17 +28,26 @@ public class RestDonorController {
 
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
-    public ResponseEntity<List<Donor>> listDonor() {
-        return new ResponseEntity<>(donorService.listDonors(), HttpStatus.OK);
+    public ResponseEntity<List<DtoDonor>> listDonor() {
+
+        List<DtoDonor> dtoDonors = new ArrayList<>();
+
+        for (Donor donor : donorService.listDonors()) {
+            dtoDonors.add(Convertor.donorToDtoDonor(donor));
+        }
+
+        return new ResponseEntity<>(dtoDonors, HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/{id}")
-    public ResponseEntity<Donor> showDonor(@PathVariable Integer id){
-        return new ResponseEntity<>(donorService.get(id), HttpStatus.OK);
+    public ResponseEntity<DtoDonor> showDonor(@PathVariable Integer id){
+        return new ResponseEntity<>(Convertor.donorToDtoDonor(donorService.get(id)), HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.POST, path = {"/", ""})
-    public ResponseEntity<?> addDonor(@RequestBody Donor donor){
+    public ResponseEntity<?> addDonor(@RequestBody DtoDonor dtoDonor){
+
+        Donor donor = Convertor.dtoDonorToDonor(dtoDonor);
 
         donorService.save(donor);
 
@@ -41,7 +55,9 @@ public class RestDonorController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/{id}")
-    public ResponseEntity<?> updateDonor(@RequestBody Donor donor) {
+    public ResponseEntity<?> updateDonor(@RequestBody DtoDonor dtoDonor) {
+
+        Donor donor = Convertor.dtoDonorToDonor(dtoDonor);
 
         donorService.update(donor);
 
@@ -49,9 +65,9 @@ public class RestDonorController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/{id}/product")
-    public ResponseEntity<?> createProduct(@PathVariable Integer id, @RequestBody Product product) {
+    public ResponseEntity<?> createProduct(@PathVariable Integer id, @RequestBody DtoProduct dtoProduct) {
 
-
+        Product product = Convertor.dtoProductToProduct(dtoProduct);
 
 
         Donor donor = donorService.get(id);

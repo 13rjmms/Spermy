@@ -1,5 +1,7 @@
 package org.academiadecodigo.spermmatchbank.controller;
 
+import org.academiadecodigo.spermmatchbank.converters.Convertor;
+import org.academiadecodigo.spermmatchbank.dtos.DtoConsumer;
 import org.academiadecodigo.spermmatchbank.model.Consumer;
 import org.academiadecodigo.spermmatchbank.service.ConsumerService;
 import org.academiadecodigo.spermmatchbank.service.ConsumerServiceImp;
@@ -30,18 +32,27 @@ public class RestConsumerController {
 
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
-    public ResponseEntity<List<Consumer>> listConsumer() {
-        return new ResponseEntity<>(consumerService.listConsumers(), HttpStatus.OK);
+    public ResponseEntity<List<DtoConsumer>> listConsumer() {
+
+        List<DtoConsumer> dtoConsumers = new ArrayList<>();
+
+        for (Consumer consumer : consumerService.listConsumers()) {
+            dtoConsumers.add(Convertor.consumerToDtoConsumer(consumer));
+        }
+
+        return new ResponseEntity<>(dtoConsumers, HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/{id}")
-    public ResponseEntity<Consumer> showConsumer(@PathVariable Integer id){
-        return new ResponseEntity<>(consumerService.get(id), HttpStatus.OK);
+    public ResponseEntity<DtoConsumer> showConsumer(@PathVariable Integer id){
+        return new ResponseEntity<>(Convertor.consumerToDtoConsumer(consumerService.get(id)), HttpStatus.OK);
     }
 
 
     @RequestMapping(method = RequestMethod.POST, path = {"/", ""})
-    public ResponseEntity<?> addConsumer(@RequestBody Consumer consumer){
+    public ResponseEntity<?> addConsumer(@RequestBody DtoConsumer dtoConsumer){
+
+        Consumer consumer = Convertor.dtoConsumerToConsumer(dtoConsumer);
 
         consumerService.save(consumer);
 
@@ -50,7 +61,9 @@ public class RestConsumerController {
 
 
     @RequestMapping(method = RequestMethod.POST, path = "/{id}")
-    public ResponseEntity<?> updateConsumer(@RequestBody Consumer consumer) {
+    public ResponseEntity<?> updateConsumer(@RequestBody DtoConsumer dtoConsumer) {
+
+        Consumer consumer = Convertor.dtoConsumerToConsumer(dtoConsumer);
 
         consumerService.update(consumer);
 

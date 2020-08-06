@@ -54,13 +54,16 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.45632184" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -282,14 +285,14 @@
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state x="383" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.734@0.23.1280.734" timestamp="1596710503228" />
-    <state x="128" y="23" key="SettingsEditor" timestamp="1596671245341">
+    <state x="128" y="23" key="SettingsEditor" timestamp="1596723673864">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
-    <state x="128" y="23" key="SettingsEditor/0.23.1280.734@0.23.1280.734" timestamp="1596671245341" />
-    <state x="8" y="23" key="new project wizard" timestamp="1596671203156">
+    <state x="128" y="23" key="SettingsEditor/0.23.1280.734@0.23.1280.734" timestamp="1596723673864" />
+    <state x="8" y="23" key="new project wizard" timestamp="1596723502000">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
-    <state x="8" y="23" key="new project wizard/0.23.1280.734@0.23.1280.734" timestamp="1596671203156" />
+    <state x="8" y="23" key="new project wizard/0.23.1280.734@0.23.1280.734" timestamp="1596723502000" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

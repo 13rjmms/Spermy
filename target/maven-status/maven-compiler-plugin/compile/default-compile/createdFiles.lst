@@ -5,6 +5,7 @@ org/academiadecodigo/spermmatchbank/service/ProductService.class
 org/academiadecodigo/spermmatchbank/model/Product.class
 org/academiadecodigo/spermmatchbank/service/ConsumerService.class
 org/academiadecodigo/spermmatchbank/dtos/DtoDonor.class
+org/academiadecodigo/spermmatchbank/authentication/User.class
 org/academiadecodigo/spermmatchbank/converters/Convertor.class
 org/academiadecodigo/spermmatchbank/service/ProductServiceImp.class
 org/academiadecodigo/spermmatchbank/controller/RestConsumerController.class

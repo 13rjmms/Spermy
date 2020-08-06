@@ -7,7 +7,9 @@
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/service/DonorService.java
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/model/Donor.java
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/service/ProductServiceImp.java
+/Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/authentication/ControllerAuthentication.java
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/model/DonorConsumerAbstract.java
+/Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/authentication/User.java
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/main.java
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/dtos/DtoProduct.java
 /Users/admin/Desktop/abc/src/main/java/org/academiadecodigo/spermmatchbank/model/ProductAbstract.java

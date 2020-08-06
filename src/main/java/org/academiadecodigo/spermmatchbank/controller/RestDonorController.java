@@ -51,6 +51,8 @@ public class RestDonorController {
 
         donorService.save(donor);
 
+        donor.setId(donorService.listDonors().size());
+
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 

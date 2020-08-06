@@ -1,6 +1,7 @@
 /*
 package org.academiadecodigo.spermmatchbank.authentication;
 
+import org.academiadecodigo.spermmatchbank.converters.Convertor;
 import org.academiadecodigo.spermmatchbank.dtos.DtoConsumer;
 import org.academiadecodigo.spermmatchbank.model.Consumer;
 import org.academiadecodigo.spermmatchbank.service.ConsumerService;
@@ -12,9 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 @Controller
-@RequestMapping("/login")
+//@RequestMapping("")
 public class ControllerAuthentication {
 
     private ConsumerService consumerService;
@@ -34,12 +36,32 @@ public class ControllerAuthentication {
 
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/", ""}, params = "action=save")
+    @RequestMapping(method = RequestMethod.POST, path = {"/login"}*/
+/*, params = "action=save"*//*
+)
+    public String checkLogin(@ModelAttribute("consumer") DtoConsumer dtoConsumer, HttpSession session) {
+
+        Consumer consumer = Convertor.dtoConsumerToConsumer(dtoConsumer);
+
+        boolean loggedIn = isLogged(consumer.getUsername(), consumer.getPassword());
+
+        if (loggedIn) {
+            session.setAttribute("username", consumer.getUsername());
+        }
+
+
+        return "redirect:/consumer/";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, path = {"/register", ""}, params = "action=save")
     public String saveConsumer(@ModelAttribute("consumer") DtoConsumer dtoConsumer) {
 
-        Consumer savedConsumer = customerService.save(customerDtoToCustomer.convert(customerDto));
+        Consumer consumer = consumerService.save(Convertor.dtoConsumerToConsumer(dtoConsumer));
 
-        return "redirect:/customer/" + savedCustomer.getId();
+        consumer.setId(consumerService.listConsumers().size());
+
+
+        return "redirect:/api/consumer/";
     }
 
 

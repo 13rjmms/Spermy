@@ -16,7 +16,7 @@ public interface ConsumerService {
     List<Consumer> listConsumers();
 
 
-    void save(Consumer consumer);
+    Consumer save(Consumer consumer);
 
     void update(Consumer consumer);
 

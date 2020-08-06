@@ -18,17 +18,17 @@ public class ConsumerServiceImp implements ConsumerService {
 
     public ConsumerServiceImp(){
 
+        c1.setId(1);
         c1.setFirstName("Rafa");
         c1.setAge(22);
         c1.setLastName("Moreira");
         c1.setEmail("13rjmms@gmail.com");
-        c1.setId(1);
 
+        c2.setId(2);
         c2.setFirstName("Miles");
         c2.setAge(22);
         c2.setLastName("Moreira");
         c2.setEmail("13rjmms@gmail.com");
-        c2.setId(2);
 
         listConsumer.add(c1);
         listConsumer.add(c2);
@@ -46,9 +46,11 @@ public class ConsumerServiceImp implements ConsumerService {
     }
 
     @Override
-    public void save(Consumer consumer) {
+    public Consumer save(Consumer consumer) {
 
         listConsumer.add(consumer);
+
+        return consumer;
     }
 
     @Override

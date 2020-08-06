@@ -55,6 +55,7 @@ public class RestConsumerController {
         Consumer consumer = Convertor.dtoConsumerToConsumer(dtoConsumer);
 
         consumerService.save(consumer);
+        consumer.setId(consumerService.listConsumers().size());
 
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
@@ -69,11 +70,6 @@ public class RestConsumerController {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-
-
-
-
 
 
 

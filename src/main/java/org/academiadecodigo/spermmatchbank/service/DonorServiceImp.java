@@ -77,7 +77,7 @@ public class DonorServiceImp implements DonorService{
         d3.setBloodType("B+");
         d3.setEyeColor("Black");
         d3.setHairColor("Brown");
-        d3.setImgURL("https://generated.photos/face/joyfull-white-adult-male-with-short-brown-hair-and-brown-eyes--5e6806706d3b380006d4dd21");
+        d3.setImgURL("https://images.generated.photos/ZovKIKpG8afQRnO8TvBPZXTWdOnuLu0GnzXcTZU90uQ/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA2MjAyOTQuanBn.jpg");
         d3.setBi("123123123");
         d3.setLastName("S");
         d3.setAge(30);
@@ -136,7 +136,7 @@ public class DonorServiceImp implements DonorService{
         d6.setBloodType("B+");
         d6.setEyeColor("Blue");
         d6.setHairColor("Brown");
-        d6.setImgURL("https://generated.photos/face/joyfull-white-adult-male-with-short-brown-hair-and-blue-eyes--5e68805e6d3b380006f02adb");
+        d6.setImgURL("https://images.generated.photos/eCYgeoCk7zpbpOiyVjNzg_7BuvOuxDZfRnxz_YVr8ng/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwNTEwNTUuanBn.jpg");
         d6.setBi("123123123");
         d6.setLastName("R");
         d6.setAge(27);
@@ -176,7 +176,7 @@ public class DonorServiceImp implements DonorService{
         d8.setBloodType("B+");
         d8.setEyeColor("Black");
         d8.setHairColor("Brown");
-        d8.setImgURL("https://generated.photos/face/neutral-white-adult-male-with-short-brown-hair-and-brown-eyes--5e6812416d3b380006d793af");
+        d8.setImgURL("https://images.generated.photos/remKGBiSeBfBGQrec3coJzmGJdYkJ34klZi6uXfuDc0/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxNzM0NDIuanBn.jpg");
         d8.setBi("123123123");
         d8.setLastName("M");
         d8.setAge(33);
@@ -196,7 +196,7 @@ public class DonorServiceImp implements DonorService{
         d9.setBloodType("B+");
         d9.setEyeColor("Black");
         d9.setHairColor("Black");
-        d9.setImgURL("https://generated.photos/face/joyfull-white-adult-male-with-short-brown-hair-and-brown-eyes--5e68149e6d3b380006d81e67");
+        d9.setImgURL("https://images.generated.photos/GJhUOvEU4T-lnIe8pGiuvCQ7AHTUYGVJDm1MvhfDJC8/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxNjE0NTcuanBn.jpg");
         d9.setBi("123123123");
         d9.setLastName("C");
         d9.setAge(40);
@@ -216,7 +216,7 @@ public class DonorServiceImp implements DonorService{
         d10.setBloodType("B+");
         d10.setEyeColor("Black");
         d10.setHairColor("Brown");
-        d10.setImgURL("https://generated.photos/face/joyfull-white-adult-male-with-short-brown-hair-and-brown-eyes--5e6814e76d3b380006d82f71");
+        d10.setImgURL("https://images.generated.photos/XMZuT6jjuUIYlCTtRKMX5BTT1BuDQWV21XXdCva0YQU/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1NzE3MDMuanBn.jpg");
         d10.setBi("123123123");
         d10.setLastName("Cr");
         d10.setAge(29);

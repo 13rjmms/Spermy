@@ -17,7 +17,12 @@ public class Donor extends DonorConsumerAbstract {
     private String imgURL;
     private List<Product> productList = new ArrayList<>();
     private int numberSamples;
+    private String bio;
 
+
+    public String getBio() {
+        return bio;
+    }
 
     public int getNumberSamples() {
         return numberSamples;
@@ -90,5 +95,9 @@ public class Donor extends DonorConsumerAbstract {
 
     public void setNumberSamples(int numberSamples) {
         this.numberSamples = numberSamples;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 }

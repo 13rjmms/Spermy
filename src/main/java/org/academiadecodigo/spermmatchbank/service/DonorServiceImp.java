@@ -28,16 +28,46 @@ public class DonorServiceImp implements DonorService{
         d1.setNacionality("Portuguese");
         d1.setRace("Yellow");
         d1.setFirstName("Nuno");
+        d1.setBloodType("A+");
+        d1.setEyeColor("Blue");
+        d1.setHairColor("Red");
+        d1.setImgURL("https://image.shutterstock.com/image-photo/portrait-stylish-midget-mc-headphones-260nw-1247042659.jpg");
+        d1.setBi("123123123");
+        d1.setLastName("Midget");
+        d1.setAge(18);
+        d1.setBio("Supp bitches");
+        d1.setGender("Male");
+        d1.setEmail("yo@m.com");
+        d1.setPhone("123123123");
+        d1.setAddress("fucket");
+        d1.setCountry("Pt");
+        d1.setCity("Lisboa");
+        d1.setNacionality("PT");
+        d1.setWeight("90");
 
         d2.setId(2);
         d2.setNacionality("Russian");
         d2.setRace("Gypsy");
-        d2.setFirstName("Diogo");
+        d2.setFirstName("Outro");
+        d2.setBloodType("B+");
+        d2.setEyeColor("Black");
+        d2.setHairColor("Black");
+        d2.setImgURL("https://image.shutterstock.com/image-photo/portrait-stylish-midget-mc-headphones-260nw-1247042659.jpg");
+        d2.setBi("123123123");
+        d2.setLastName("Midget");
+        d2.setAge(20);
+        d2.setBio("Mekie boss");
+        d2.setGender("Male");
+        d2.setEmail("yo@m.com");
+        d2.setPhone("123123123");
+        d2.setAddress("fucket2");
+        d2.setCountry("Pt");
+        d2.setCity("POrto");
+        d2.setNacionality("PT");
+        d2.setWeight("200");
 
         listDonors.add(d1);
         listDonors.add(d2);
-
-
 
     }
 

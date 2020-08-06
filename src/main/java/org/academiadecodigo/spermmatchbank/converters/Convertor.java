@@ -37,6 +37,7 @@ public class Convertor {
         dtoDonor.setImgURL(donor.getImgURL());
         dtoDonor.setProductList(donor.getProductList());
         dtoDonor.setNumberSamples(donor.getNumberSamples());
+        dtoDonor.setBio(donor.getBio());
 
         return dtoDonor;
     }
@@ -66,6 +67,7 @@ public class Convertor {
         donor.setImgURL(dtoDonor.getImgURL());
         donor.setProductList(dtoDonor.getProductList());
         donor.setNumberSamples(dtoDonor.getNumberSamples());
+        donor.setBio(dtoDonor.getBio());
 
         return donor;
     }

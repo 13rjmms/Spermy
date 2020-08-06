@@ -32,7 +32,7 @@ public class DonorServiceImp implements DonorService{
 
         d1.setId(1);
         d1.setNacionality("Portuguese");
-        d1.setRace("Black");
+        d1.setRace("Aethiopian");
         d1.setFirstName("Gonçalo");
         d1.setBloodType("A+");
         d1.setEyeColor("Black");
@@ -41,9 +41,7 @@ public class DonorServiceImp implements DonorService{
         d1.setBi("123123123");
         d1.setLastName("C");
         d1.setAge(27);
-        d1.setBio("I am Gonçalo C, 27-year-old government politician who enjoys chess, competitive dog grooming and photography. I am friendly and brave, but can also be very disloyal and a bit stingy.\n" +
-                "\n" +
-                "I am Portuguese who defines himself as pansexual. I started studying philosophy, politics and economics at college but I never finished the course.");
+        d1.setBio("I am Gonçalo C, 27-year-old government politician who enjoys chess, competitive dog grooming and photography. I am friendly and brave, but can also be very disloyal and a bit stingy. I am Portuguese who defines himself as pansexual. I started studying philosophy, politics and economics at college but I never finished the course.");
         d1.setGender("Male");
         d1.setEmail("gonçalosexy97@m.com");
         d1.setPhone("123123123");
@@ -113,7 +111,7 @@ public class DonorServiceImp implements DonorService{
         d4.setWeight("65");
 
         d5.setId(5);
-        d5.setRace("Black");
+        d5.setRace("Aethiopian");
         d5.setFirstName("Luis");
         d5.setBloodType("B+");
         d5.setEyeColor("Black");
